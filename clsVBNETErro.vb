@@ -51,7 +51,7 @@ Public Class DataBaseAccess
     Protected Function CloseConnection() As Boolean
         Try ' Close connection
             If SqlCon.State <> ConnectionState.Closed Then
-                SqlCon.Close()
+                SqlCon.Clo
                 Return True
             Else
                 Return False
@@ -65,7 +65,7 @@ Public Class DataBaseAccess
     ' if SQL statement execute successful then return true else
     ' occur exception retun false
     Public Function ExecuteNoneQuery(ByVal v_sSqlString As String, Optional ByVal ShowErrorMessage As Boolean = False) As Boolean
-        If OpenConnection() Then
+        If OpenConn
             Try
                 'sets the SqlConnection used by this SqlCom of the SqlCommand
                 SqlCom = New SqlCommand(v_sSqlString, SqlCon)

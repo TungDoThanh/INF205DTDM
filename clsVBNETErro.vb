@@ -57,7 +57,7 @@ Public Class DataBaseAccess
                 Return False
             End If
         Catch ex As SqlException
-            MsgBox(ex.Message, MsgBoxStyle.Critical, "Close Database")
+            MsgBox(ex.Message, MsgBoxStyle.Crit
             Return False
         End Try
     End Function
@@ -77,9 +77,8 @@ Public Class DataBaseAccess
                 If ShowError
             Finally
                 ' Close database connection.
-                CloseConnection()
-                SqlCom.Dispose()
-            End Try
+                CloseConnecton()
+                SqlCom.Dispo
         End If
     End Function
     

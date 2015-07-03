@@ -1,13 +1,7 @@
-# INF205DTDM
-Imports System
-Imports System.Data
-Imports Sql.Data.Types
-Imports System.Configuration
-Imports Sql.Data.SqlClient
 Public Class PhepCong
-public function PhepCong(ByVal SoA as int, Byval SoB as int)
- Dim Tong as int = 0
- Tong = soA + SoB
- return Tong
-End Function
+    Public Function PhepCong(ByVal SoA As Integer, ByVal SoB As Integer) As Integer
+        Dim Tong As Integer = 0
+        Tong = SoA + SoB
+        Return Tong
+    End Function
 End Class
